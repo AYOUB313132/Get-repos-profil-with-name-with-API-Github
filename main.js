@@ -42,7 +42,7 @@ btn.onclick = function (){
             }
        
             let fspan = document.createElement('span')
-            fspan.innerHTML = '<b>Created :</b> ' + new Date(result[i].created_at) 
+            fspan.innerHTML = '<b>Created :</b> ' + result[i].created_at 
             repo.append(fspan)
             let lspan = document.createElement('span')
             lspan.innerHTML ='<b>Last Updat : </b>'+ result[i].updated_at
