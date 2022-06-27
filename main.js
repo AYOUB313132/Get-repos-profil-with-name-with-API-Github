@@ -13,6 +13,8 @@ btn.onclick = function (){
         myRequest.onload = function (){
             if(this.readyState === 4 && this.status === 200){
               resolve(JSON.parse(this.responseText))
+            }else if(this.readyState != 4 && this.status != 200){
+              resolve('This name not exist')
               
             }else{
               reject(Error('conexion not found'))
@@ -61,7 +63,7 @@ btn.onclick = function (){
         }
       ).catch((reject)=>{
         let result = document.createElement('h3')
-        result.textContent = 'write name in github'
+        result.textContent = 'Write your name in github'
         myContent.append(result)
         
       })
