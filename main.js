@@ -63,6 +63,7 @@ btn.onclick = function (){
         }
       ).catch((reject)=>{
         let result = document.createElement('h3')
+        result.id = 'not-found'
         result.textContent = 'Write your name in github'
         myContent.append(result)
         

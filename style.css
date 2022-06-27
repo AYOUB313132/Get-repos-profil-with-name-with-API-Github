@@ -104,8 +104,19 @@ h1{
     color: #f68084;
 }
 .content article a:hover{
-
+    color: #0baa46;
 }
 .content article b{
     color: blueviolet;
+}
+
+#not-found{
+    text-align: center;
+    font-size: 2rem;
+    color:#f68084;
+}
+@media (max-width:767px) {
+    #not-found{
+        font-size: 1.5rem;
+    }
 }
